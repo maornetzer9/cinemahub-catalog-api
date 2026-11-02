@@ -8,7 +8,7 @@ The interface is [CinemaHub](https://github.com/maornetzer9/Movies).
 
 ## Live demo
 
-[CinemaHub](https://cinemahub.onrender.com) · [This API](https://movies-subscription-backend.onrender.com/health)
+[CinemaHub](https://cinemahub-xi3w.onrender.com) · [This API](https://movies-subscription-backend.onrender.com/health)
 
 This service has no interface. Product screenshots are in the [frontend repository](https://github.com/maornetzer9/Movies).
 
@@ -78,7 +78,7 @@ Copy `.env.example` to `.env`. Never commit `.env`.
 |---|---|---|
 | `SECRET_KEY` | Yes | Must match the user service |
 | `MONGOOSE_URI` | Yes | Same database as the user service |
-| `ORIGIN` | Yes | One frontend origin, or a comma-separated list. Production includes `https://cinemahub.onrender.com` and `https://movies-jps0.onrender.com` |
+| `ORIGIN` | Yes | One frontend origin, or a comma-separated list. Production includes `https://cinemahub-xi3w.onrender.com` and `https://movies-jps0.onrender.com` |
 | `PORT` | No | Defaults to `3001`. Render provides this value |
 | `MOCK_MOVIES_URL` | Empty database only | Used when the movies collection is empty |
 | `MOCK_USERS_URL` | Empty database only | Used when the members collection is empty |
