@@ -2,15 +2,15 @@
 
 **Movies, members, and subscriptions for CinemaHub.**
 
-Catalog records are stored in MongoDB. Sign-in and user records stay in [Movies-User-Backend](https://github.com/maornetzer9/Movies-User-Backend). This service checks the same JWT secret and reads the same user collection for token revocation and forced password changes.
+Catalog records are stored in MongoDB. Sign-in and user records stay in [cinemahub-users-api](https://github.com/maornetzer9/cinemahub-users-api). This service checks the same JWT secret and reads the same user collection for token revocation and forced password changes.
 
-The interface is [CinemaHub](https://github.com/maornetzer9/Movies).
+The interface is [CinemaHub](https://github.com/maornetzer9/cinemahub-frontend).
 
 ## Live demo
 
 [CinemaHub](https://cinemahub-xi3w.onrender.com) · [This API](https://movies-subscription-backend.onrender.com/health)
 
-This service has no interface. Product screenshots are in the [frontend repository](https://github.com/maornetzer9/Movies).
+This service has no interface. Product screenshots are in the [frontend repository](https://github.com/maornetzer9/cinemahub-frontend).
 
 ## Responsibilities
 
@@ -96,7 +96,7 @@ The suite covers token rejection, movie and member permissions, subscriptions, t
 
 ## Deployment
 
-The Render web service is **Movies-Subscription-Backend**. Build with `npm install` and start with `npm start`. The process listens on `0.0.0.0` and the platform `PORT`. The plan is the free instance in Frankfurt.
+The Render web service is **cinemahub-catalog-api**. Build with `npm install` and start with `npm start`. The process listens on `0.0.0.0` and the platform `PORT`. The plan is the free instance in Frankfurt.
 
 Set `SECRET_KEY`, `MONGOOSE_URI`, `ORIGIN`, and `NODE_VERSION=20` in the Render environment. Render supplies `PORT`. Leave the mock URLs unset when the database already contains movies and members.
 
@@ -108,6 +108,6 @@ The free instance sleeps after a period without traffic. The first request after
 
 | Service | Local URL | Repository |
 |---|---|---|
-| Interface | Vite dev server | [Movies](https://github.com/maornetzer9/Movies) |
-| Users and authentication | `http://localhost:3000` | [Movies-User-Backend](https://github.com/maornetzer9/Movies-User-Backend) |
-| This API | `http://localhost:3001` | [Movies-Subscription-Backend](https://github.com/maornetzer9/Movies-Subscription-Backend) |
+| Interface | Vite dev server | [cinemahub-frontend](https://github.com/maornetzer9/cinemahub-frontend) |
+| Users and authentication | `http://localhost:3000` | [cinemahub-users-api](https://github.com/maornetzer9/cinemahub-users-api) |
+| This API | `http://localhost:3001` | [cinemahub-catalog-api](https://github.com/maornetzer9/cinemahub-catalog-api) |
